@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QQr-EP-WOO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apps-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Apps" customClass="AppsViewController" customModule="ReproductionAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Apps" id="d7O-Jp-JQh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="94"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yh3-uN-y0B">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QQr-EP-WOO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dfi-JR-1I4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QBq-8N-F23" kind="relationship" relationship="viewControllers" id="adm-KP-PM3"/>
+                        <segue destination="eeR-IK-hWX" kind="relationship" relationship="viewControllers" id="b7W-qb-613"/>
+                        <segue destination="giG-wy-KdE" kind="relationship" relationship="viewControllers" id="hnV-2M-M4x"/>
+                        <segue destination="1tf-LO-u0N" kind="relationship" relationship="viewControllers" id="kOi-0x-nBY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuu-7H-Hk0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204.34782608695653" y="94.419642857142847"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="HMq-wN-RjB">
+            <objects>
+                <viewController id="bN9-xv-9bv" customClass="GameViewController" customModule="ReproductionAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QcY-W6-3g4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="v3C-uQ-ffP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Games" id="8YR-ib-f22"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvN-4A-P2f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="-607"/>
+        </scene>
+        <!--Apps-->
+        <scene sceneID="Huk-b7-Kz1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QBq-8N-F23" userLabel="Apps" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Apps" image="square.stack.3d.up.fill" catalog="system" id="aRH-AZ-Ign" userLabel="Apps"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="EHV-Ap-u41">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z5z-GX-SAR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZjS-6A-kSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704.34782608695662" y="94.419642857142847"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="jml-Uk-O7I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eeR-IK-hWX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Games" image="gamecontroller" catalog="system" id="QoI-Z8-nbr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="YlD-FY-Q1h">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bN9-xv-9bv" kind="relationship" relationship="rootViewController" id="Gbr-SA-sOs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7r-Yl-VVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="-607"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="mXB-ID-P5h">
+            <objects>
+                <viewController id="Abn-L7-4aY" customClass="SearchViewController" customModule="ReproductionAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgz-Mc-vSe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jdD-nc-XZP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="Jz5-rB-Pbn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHS-Xh-TbV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="824"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="G0b-oL-CeL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="giG-wy-KdE" userLabel="Search" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="22z-n9-PVK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CVS-So-1GO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Abn-L7-4aY" kind="relationship" relationship="rootViewController" id="xLO-zm-wl0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJS-Bt-36f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="824"/>
+        </scene>
+        <!--Arcade-->
+        <scene sceneID="7wF-wG-y3s">
+            <objects>
+                <viewController id="GA2-o5-MkV" customClass="ArcadeViewController" customModule="ReproductionAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zu3-8Q-ezy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nlC-Bp-zfS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Arcade" id="gcv-Mw-rh7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSO-An-5j2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2551" y="824"/>
+        </scene>
+        <!--Arcade-->
+        <scene sceneID="WCD-Vr-Jek">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1tf-LO-u0N" userLabel="Arcade" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Arcade" image="mappin.and.ellipse" catalog="system" id="tWk-nv-9jM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="bRi-BJ-dUS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GA2-o5-MkV" kind="relationship" relationship="rootViewController" id="Tue-Zz-TzC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5I-vg-eEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="824"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
